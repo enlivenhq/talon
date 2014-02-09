@@ -1,0 +1,9 @@
+bin
+bin/
+obj
+obj/
+*.user
+*.suo
+Talon/Talon/Talon.Web/bin/
+Talon/Talon/packages/mongocsharpdriver.1.8.3/lib/net35/MongoDB.Bson.XML
+Talon/Talon/packages/mongocsharpdriver.1.8.3/lib/net35/MongoDB.Driver.XML
