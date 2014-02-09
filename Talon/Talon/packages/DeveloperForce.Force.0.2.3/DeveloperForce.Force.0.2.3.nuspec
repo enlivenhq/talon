@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DeveloperForce.Force</id>
+    <version>0.2.3</version>
+    <title>DeveloperForce.Force</title>
+    <authors>developerforce, wadewegner</authors>
+    <owners>developerforce, wadewegner</owners>
+    <licenseUrl>https://raw.github.com/developerforce/Force.com-Toolkit-for-NET/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/developerforce/Force.com-Toolkit-for-NET/</projectUrl>
+    <iconUrl>https://raw.github.com/developerforce/Force.com-Toolkit-for-NET/master/nuget/packaging/avatar.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The DeveloperForce.Force NuGet provides a .NET library for interacting with Salesforce's Force.com REST APIs.</description>
+    <releaseNotes />
+    <copyright>Copyright 2014</copyright>
+    <tags>salesforce forcedotcom force.com force rest api</tags>
+    <dependencies>
+      <dependency id="Microsoft.Bcl" version="1.1.6" />
+      <dependency id="Microsoft.Bcl.Async" version="1.0.165" />
+      <dependency id="Microsoft.Bcl.Build" version="1.0.13" />
+      <dependency id="Microsoft.Net.Http" version="2.2.18" />
+      <dependency id="Newtonsoft.Json" version="5.0.8" />
+      <dependency id="DeveloperForce.Common" version="0.2.8" />
+    </dependencies>
+  </metadata>
+</package>

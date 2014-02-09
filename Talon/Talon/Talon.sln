@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talon.Web", "Talon.Web\Talon.Web.csproj", "{6D6DF0F7-3AA8-4E32-AA78-367D3F3697BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talon.Data", "Talon.Data\Talon.Data.csproj", "{07ED4847-AA74-4FD5-AACE-44C77F3AD682}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F19F840D-2091-4F66-9D9E-0A74F7816FAD}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0775A972-A8EC-489C-8749-FD8B5BF0E9C9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D6DF0F7-3AA8-4E32-AA78-367D3F3697BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6DF0F7-3AA8-4E32-AA78-367D3F3697BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6DF0F7-3AA8-4E32-AA78-367D3F3697BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6DF0F7-3AA8-4E32-AA78-367D3F3697BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07ED4847-AA74-4FD5-AACE-44C77F3AD682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07ED4847-AA74-4FD5-AACE-44C77F3AD682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07ED4847-AA74-4FD5-AACE-44C77F3AD682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07ED4847-AA74-4FD5-AACE-44C77F3AD682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

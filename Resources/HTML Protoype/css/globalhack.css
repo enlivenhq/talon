@@ -1,0 +1,856 @@
+html,body{ 
+  height:100%; 
+  background: #FFFCF3;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+body {
+  padding-top: 80px;
+}
+canvas{ float: left; }
+
+section{ 
+  display: inline-block; 
+  display: block;
+  padding: 60px 0 80px; 
+  position: relative;  
+  width: 100%; 
+}
+section.full{ min-height: 100%;  }
+section.half{ height: 350px;  }
+section.padlessTop{padding-top:0px; }
+
+.textCenter{ text-align: center; }
+.textLeft{ text-align: left; }
+.centered{ margin:0 auto; }
+
+.padless{padding:0px; }
+.paddingTopS { padding-top:15px; }
+.paddingTopM { padding-top:30px; }
+.paddingTopL { padding-top:45px; }
+
+.marginTopS { margin-top:15px; }
+.marginTopM { margin-top:30px; }
+.marginTopL { margin-top:45px; }
+.marginTopXL { margin-top:60px; }
+
+.marginBottomS { margin-bottom:15px; }
+.marginBottomM { margin-bottom:30px; }
+.marginBottomL { margin-bottom:45px; }
+.marginBottomXL { margin-bottom:60px; }
+
+svg{ width:100%!important; }
+.v-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.v-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: none;
+}
+
+
+h1{
+  font-family: 'Libre Baskerville';
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom:35px;
+}
+h2{
+  font-family: 'Libre Baskerville';
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 26px;
+  line-height: 1.6em;
+}
+
+h3{
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 100;
+}
+h4{
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 700; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+p{
+  font-size: 15px;
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+.login{
+  margin-top:-80px;
+  background: #8B9FA8;
+  color:#FFFCF3;
+  height: 110%;
+}
+.login input{
+  background: #8B9FA8;
+  border: 2px solid #FFFCF3;
+  margin-bottom: 10px!important;
+  border-radius: 0px;
+  color:#fff;
+  font-weight: 500;
+}
+.login .btn{
+  background: #8B9FA8;
+  border-color: #5F7F8D;
+  border-width: 2px;
+  color:#FFFCF3;
+  margin-top:40px;
+}
+
+.login .btn:hover{
+  background: #5F7F8D;
+}
+
+
+.login :focus {
+  border:none!important;
+  border: 2px solid rgba(255,255,255,.3)!important;
+  outline: none!important;
+  box-shadow: none!important;
+
+}
+.login input:active{
+  border:none!important;
+  border: 2px solid rgba(255,255,255,.3)!important;
+  outline: none!important;
+  box-shadow: none!important;
+}
+/* all */
+.form-control:-moz-placeholder{color:rgba(255,255,255,.6)}.form-control::-moz-placeholder{color:rgba(255,255,255,.6);opacity:1}.form-control:-ms-input-placeholder{color:rgba(255,255,255,.6)}.form-control::-webkit-input-placeholder{color:rgba(255,255,255,.6)}
+
+.dropdown-menu {
+  background:#e5bd58;
+  
+}
+.dropdown-menu > li > a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#F2d89C;
+  background:#e5bd58;
+}
+.dropdown-menu > li > a:hover{
+  background: inherit;
+  color:#fff;
+}
+
+/* Navbar */
+.navbar-inverse {
+  background: #F2d89C;
+}
+
+.navbar {
+  min-height: 80px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e6c77b;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color:#FFFCF3;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  background: #F2d89C;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin:8px 10px 0px 10px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFCF3;
+  font-size: 40px;
+}
+
+.navbar .navbar-right i{
+  font-size:2em;
+}
+/* Sidebar */
+.sidebar {
+  color: #FFFCF3;
+  background: #303332;
+  padding: 80px 20px 20px;
+}
+.sidebar li a{
+  color: #FFFCF3;
+}
+.sidebar li a:hover{
+  color:#F2d89C;
+  border-right: 1px solid #1e2120;
+  background: #272a29;
+}
+.nav-sidebar > .active > a {
+  background: #96b3c0;
+  border-right: 1px solid #6e858f;
+}
+
+
+.sidebar .info-box{
+  background: #96b3c0;
+  width:100%;
+  padding: 20px;
+  margin-bottom:20px;
+}
+
+.sidebar .info-box.gold{
+  background: #F2d89C;
+
+}
+
+
+
+
+
+.progress{
+  background-color: #FFFCF3;
+}
+
+.progress-bar {
+  background: #5F7F8D;
+}
+
+
+
+.avatar{
+  height: 200px;
+  float: right;
+  width: auto;
+  border-radius:9999999px;
+  border: 5px solid rgba(255,255,255,.9);
+}
+
+.percentage{
+  height: 300px;
+  width: 300px;
+  background: #5F7F8D;
+  border-radius:9999999px;
+  border: 5px solid rgba(255,255,255,.9);
+}
+
+.percentage-call-out{
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#5F7F8D;
+}
+
+.percentage-call-out .big{
+  background: #F2d89C;
+  color:#FFFCF3;
+  width: 200px;
+  height: 200px;
+  padding:40px 0;
+  text-align: center;
+  font-size: 70px;
+  border-radius:9999999px;
+  margin: 0 auto;
+  border: 5px #FFFCF3 solid;
+
+}
+
+.person-info{
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.person-info span{
+  color: rgba(255,255,255,.35);
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+
+
+/* Opportunity */
+.opportunity .main-graphs{
+  background: #8B9FA8;
+  color:#FFFCF3;
+}
+
+.opportunity .main-graphs h1{
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  margin: 50px 0;
+}
+
+.opportunity .main-graphs h2{
+  padding-bottom: 10px;
+  border-bottom: 4px solid #FFFCF3;
+}
+
+.opportunity .info{
+  background: #96b3c0;
+  color:#FFFCF3;
+  text-align: center;
+  padding:60px 0 90px;
+}
+.opportunity .info .total-projects{
+  font-size: 100px;
+  font-weight: 900;
+}
+.opportunity .info .total-projects .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.opportunity .info .estimated-revenue{
+  font-size: 100px;
+  font-weight: 900;
+}
+.opportunity .info .estimated-revenue .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.opportunity .info .forcast-accuracy{
+  font-size: 100px;
+  font-weight: 900;
+}
+.opportunity .info .forcast-accuracy .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.opportunity .sales-stage{
+/*  background: #303332;
+  color:#FFFCF3;*/
+}
+
+.opportunity .sales-stage .good{
+  margin: 60px 0;
+}
+
+.opportunity .sales-stage .medium{
+  margin: 60px 0;
+}
+
+.opportunity .sales-stage .bad{
+  margin: 60px 0;
+}
+
+.opportunity .sales-stage .stage{
+  
+  padding: 20px 20px 20px 20px;
+  
+  border-bottom: 9px solid #f3d998;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+.opportunity .sales-stage .stage.complete .opportunity{
+  color:#181918;
+  opacity: .1;
+}
+.opportunity .sales-stage .stage.complete .date-of-close{
+  color:#181918;
+  opacity: .1;
+}
+
+.opportunity .sales-stage .stage.qualifying .pain-rating{
+  background: #F2d89C;
+  color:#e5bd59;
+  height:200px;
+  font-size:100px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .pain-rating span{
+
+}
+.opportunity .sales-stage .stage.qualifying .pain-rating span.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .pain-rating span.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.opportunity .sales-stage .stage.qualifying .fit{
+  background: #8B9FA8;
+  color:#e5bd59;
+  height:200px;
+  font-size:100px;
+  text-align: center;
+  padding-top:40px;
+}
+
+.opportunity .sales-stage .stage.qualifying .fit div{
+  color:#5f7f8d;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.opportunity .sales-stage .stage.qualifying .fit div.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .demo-rating{
+  background: #F2d89C;
+  color:#e5bd59;
+  height:200px;
+  font-size:100px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .demo-rating span{
+
+}
+.opportunity .sales-stage .stage.qualifying .demo-rating span.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .demo-rating span.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.opportunity .sales-stage .stage.qualifying .competitor{
+  background: #8B9FA8;
+  color:#5f7f8d;
+  height:200px;
+  font-size:100px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .competitor span{
+
+}
+.opportunity .sales-stage .stage.qualifying .competitor span.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .competitor span.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.opportunity .sales-stage .stage.qualifying .executive{
+  background: #F2d89C;
+  color:#5f7f8d;
+  height:200px;
+  font-size:50px;
+  text-align: center;
+  padding-top:40px;
+}
+
+.opportunity .sales-stage .stage.qualifying .executive span{
+
+}
+.opportunity .sales-stage .stage.qualifying .executive span.active{
+  color:#FFFCF3;
+  font-family: "Dr Sugiyama";
+}
+
+.opportunity .sales-stage .stage.qualifying .executive span.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.opportunity .sales-stage .stage.qualifying .legal{
+  background: #8B9FA8;
+  color:#5f7f8d;
+  height:200px;
+  font-size:50px;
+  text-align: center;
+  padding-top:40px;
+}
+
+.opportunity .sales-stage .stage.qualifying .legal span{
+
+}
+.opportunity .sales-stage .stage.qualifying .legal span.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .legal span.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.opportunity .sales-stage .stage.qualifying .proposal{
+  background: #F2d89C;
+  color:#e5bd59;
+  height:200px;
+  font-size:30px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .proposal div{
+  margin: 60px 0 0px;
+  font-weight: 300;
+}
+.opportunity .sales-stage .stage.qualifying .proposal div.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .proposal div.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top:40px;
+}
+
+.opportunity .sales-stage .stage.qualifying .pricing{
+  background: #8B9FA8;
+  color:#5F7F8D;
+  height:200px;
+  font-size:30px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .pricing div{
+  margin-top: 50px;
+  margin: 60px 0 0px;
+}
+.opportunity .sales-stage .stage.qualifying .pricing div.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .pricing div.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top:40px;
+}
+
+
+
+.opportunity .sales-stage .stage.qualifying .won{
+  background: #F2d89C;
+  color:#e5bd59;
+  height:200px;
+  font-size:40px;
+  text-align: center;
+}
+
+.opportunity .sales-stage .stage.qualifying .won div{
+  margin-top:40px;
+}
+.opportunity .sales-stage .stage.qualifying .won div.active{
+  color:#FFFCF3;
+}
+
+.opportunity .sales-stage .stage.qualifying .won div.title{
+  color:#FFFCF3;
+  display: block;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+
+.opportunity .sales-stage .stage .score{
+  background: #f3d998;
+  color:#FFFCF3;
+  font-weight: 700;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  float:left;
+  padding: 7px;
+  text-align: center;
+  margin:0px 20px 20px 0px;
+  border-radius:9999999999px;
+}
+
+.opportunity .sales-stage .stage .opportunity{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.opportunity .sales-stage .stage .date-of-close{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(0,0,0,.7);
+  letter-spacing: 2px;
+}
+
+.opportunity .sales-stage .stage .date-of-close span{
+  font-style: italic;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.opportunity .sales-stage .stage .caret-icon{
+  font-size: 30px;
+  position: absolute;
+  font-weight: 900;
+  top: 30px;
+  right: 20px;
+  color:#F2d89C;
+}
+
+.opportunity .sales-stage .stage .more-info {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.opportunity .sales-stage .stage .more-info.closed{
+  display: none;
+}
+
+.opportunity .sales-stage .stage .more-info .stage{
+  color:#F2d89C;
+  border: 2px solid #F2d89C;
+  padding: 10px 20px;
+  float:left;
+  display: inline-block;
+  margin-right:10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+}
+.opportunity .sales-stage .stage .more-info .stage.complete{
+  background: #F2d89C;
+  color:#FFFCF3;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+/* opportunity */
+.opportunity h3{
+  text-align: center;
+  font-weight: 700;
+  font-size:25px;
+  text-transform: uppercase;
+}
+.opportunity h3 span{
+  color: #5F7F8D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Dashboard
+ */
+
+
+/* Dashboard */
+.dashboard .main-graphs h1{
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  margin: 50px 0;
+}
+
+.dashboard .main-graphs h2{
+  padding-bottom: 10px;
+  border-bottom: 4px solid #FFFCF3;
+}
+
+.dashboard .info{
+  background: #F2d89C;
+  color:#FFFCF3;
+  text-align: center;
+  padding:60px 0 90px;
+}
+.dashboard .info .total-projects{
+  font-size: 100px;
+  font-weight: 900;
+}
+.dashboard .info .total-projects .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.dashboard .info .estimated-revenue{
+  font-size: 100px;
+  font-weight: 900;
+}
+.dashboard .info .estimated-revenue .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.dashboard .info .forcast-accuracy{
+  font-size: 100px;
+  font-weight: 900;
+}
+.dashboard .info .forcast-accuracy .subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dashboard .main-graphs{
+  background: #8B9FA8;
+  color:#FFFCF3;
+}
+
+
+
+
+.dashboard .opportunities{
+/*  background: #303332;
+  color:#FFFCF3;*/
+}
+
+.dashboard .opportunities .good{
+  margin: 160px 0;
+}
+
+.dashboard .opportunities .medium{
+  margin: 160px 0;
+}
+
+.dashboard .opportunities .bad{
+  margin: 160px 0;
+}
+
+.dashboard .opportunities .rating{
+  
+  padding: 20px 20px 20px 20px;
+  
+  border-bottom: 9px solid #f3d998;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+.dashboard .opportunities .rating .score{
+  background: #f3d998;
+  color:#FFFCF3;
+  font-weight: 700;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  float:left;
+  padding: 7px;
+  text-align: center;
+  margin:0px 20px 20px 0px;
+  border-radius:9999999999px;
+}
+
+.dashboard .opportunities .rating .opportunity{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.dashboard .opportunities .rating .date-of-close{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(0,0,0,.7);
+  letter-spacing: 2px;
+}
+
+.dashboard .opportunities .rating .date-of-close span{
+  font-style: italic;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.dashboard .opportunities .rating .caret-icon{
+  font-size: 30px;
+  position: absolute;
+  font-weight: 900;
+  top: 30px;
+  right: 20px;
+  color:#F2d89C;
+}
+.dashboard .opportunities .rating .more-info {
+  display: none;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.dashboard .opportunities .rating .more-info .stage{
+  color:#F2d89C;
+  border: 2px solid #F2d89C;
+  padding: 10px 20px;
+  float:left;
+  display: inline-block;
+  margin-right:10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+}
+.dashboard .opportunities .rating .more-info .stage.complete{
+  background: #F2d89C;
+  color:#FFFCF3;
+  font-weight: 900;
+  font-style: normal;
+}

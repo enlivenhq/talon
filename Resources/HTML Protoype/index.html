@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TopOPPS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <!-- TopOPPS - Global Hack 2014 -->
+    <link href="css/globalhack.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='css/dripicons.css' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+      <div class="container-fluid ">
+
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="/flat-icons/logo.svg" alt=""></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/"><i class="fa fa-dashboard"></i></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+
+            
+          </ul>
+
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="container-fluid dashboard">
+
+      <div class="row main-graphs">
+        <div class="col-md-12">
+
+          <div class="textCenter">
+            <img src="/flat-icons/apscience.png" style="width:50%; margin: 40px 0;" alt="">
+          </div>
+
+          <div class="row marginTopL marginBottomL">
+            <div class="col-xs-6 col-sm-12 placeholder">
+                <h2>FY2014 Project Forcast</h2>
+                <div id="mainGraphProjects" ></div>
+            </div>
+          </div>
+
+          <div class="row marginBottomXL">
+            <div class="col-xs-6 col-sm-6">
+                <h2>FY2014 Projected Revenue<br> (by Month)</h2>
+                <div id="mainGraphQuarters" style="width:100%;"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <h2>FY2014 Projected Revenue<br> (by Quarter)</h2>
+                <div id="mainGraphPercentage" style="width:100%;"></div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="row info">
+
+        <div class="col-md-4 ">
+            <div class="total-projects">
+              31
+              <div class="subtitle">Total Projects</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="estimated-revenue">
+              204m
+              <div class="subtitle">Estimated Revenue FY2014</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="forcast-accuracy">
+              78%
+              <div class="subtitle">Forcast Accuracy FY2013</div>
+            </div>
+        </div>
+
+
+      </div>
+
+      <div class="row opportunities">
+        <div class="row good">
+
+            <div class="col-md-10 col-md-offset-1">
+              <h1>Hot Leads</h1>
+              <h2>Great Job! These opportunites are in the bag.</h2>
+
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+            </div>
+        </div>
+
+        <div class="row medium">
+           <div class="col-md-10 col-md-offset-1">
+              <h1>They Need Some Work</h1>
+              <h2>With some elbow grease, we might just close.</h2>
+              
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+            </div>
+        </div>
+
+
+        <div class="row medium">
+           <div class="col-md-10 col-md-offset-1">
+              <h1>Cold as Ice</h1>
+              <h2>Lorem ipsum somehint.</h2>
+              
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+              <div class="rating">
+                <div class="row">
+                  <div class="score floatLeft">95</div>
+                  <div class="opportunity">Acme. Shoe Company</div>
+                  <div class="date-of-close"><i class="fa fa-clock-o"></i> February 10th, 2014</div>
+                  <a href="#" onclick="return false" class="caret-icon"><i class="fa fa-caret-down"></i></a>
+                </div>
+
+                <div class="row">
+                  <div class="more-info">
+                    <div class="stage complete">1. Qualifying Stage</div>
+                    <div class="stage complete">1. Developing Stage</div>
+                    <div class="stage">1. Negotiations Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                    <div class="stage">1. Pending Stage</div>
+                  </div>
+                </div>
+              </div><!-- Rating -->
+
+            </div>
+        </div>
+
+      
+
+      </div>
+
+      <div class="row bad">
+        <div class="col-sm-3 col-md-3 sidebar" style="display:none;">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+
+          <div class="info-box">
+            Hello
+          </div>
+
+          <div class="info-box gold">
+            Hello
+          </div>
+
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>jQuery.noConflict();</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prototype.js"></script>
+    <script src="js/raphael.js"></script>
+  
+    <script src="js/grafico.min.js"></script>
+    <script src="js/gh-charts.js"></script>
+    
+    <script>
+      (function($) { 
+        $(function() {
+            
+
+          $('.caret-icon').click(function(){
+          $(this).parent('.row').next('.row').children('.more-info').slideToggle();
+        });            
+
+
+        });
+      })(jQuery);
+
+    </script>
+
+    <script>
+
+    </script>
+   
+  </body>
+</html>
